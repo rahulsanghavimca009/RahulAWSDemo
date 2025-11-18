@@ -13,13 +13,13 @@ pipeline {
         }
         stage('Build Docker Image') {
             steps {
-                sh 'docker build -t RahulAWSDemo:latest .'
+                sh 'docker build -t rahulawsdemo:latest .'
             }
         }
         stage('Run Container') {
             steps {
                 sh '''
-                docker rm -f RahulAWSDemo || true
+                docker rm -f rahulawsdemo || true
                 docker run -d --name rahul -p 9090:9090 RahulAWSDemo:latest
                 '''
             }
