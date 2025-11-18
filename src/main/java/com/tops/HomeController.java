@@ -9,6 +9,7 @@ public class HomeController
 	@GetMapping("/")
 	public String msg()
 	{
+		System.out.println("hhh");
 		return "Hello Welcome to Rahul AWS Project";
 	}
 }
