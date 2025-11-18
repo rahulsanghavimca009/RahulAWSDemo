@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/rahulsanghavimca009/RahulAWSDemo.git'
+                git branch: 'master', url: 'https://github.com/rahulsanghavimca009/RahulAWSDemo.git'
             }
         }
         stage('Build JAR') {
